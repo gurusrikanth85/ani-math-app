@@ -1,5 +1,7 @@
-let content = null;
+let content = null;              // holds homeQuotes + module metadata from content.json
+let modulesCache = {};           // cache for loaded module files (module1.json, module2.json, etc.)
 let currentModule = null;
+let currentModuleIndex = null;
 let currentChapter = null;
 let currentQuestionIndex = 0;
 let helpLevelUsed = "none";
@@ -7,10 +9,31 @@ let questionLocked = false;
 
 const app = document.getElementById("app");
 
+// Load top-level content: homeQuotes + module list (metadata only)
 async function loadContent() {
   const res = await fetch("content.json");
   content = await res.json();
   showHome();
+}
+
+// Load a specific module file from content/moduleX.json
+async function loadModuleByIndex(moduleIndex) {
+  // moduleIndex: 0 -> module1.json, 1 -> module2.json, etc.
+  if (modulesCache[moduleIndex]) {
+    return modulesCache[moduleIndex];
+  }
+
+  const fileName = `content/module${moduleIndex + 1}.json`;
+  const response = await fetch(fileName);
+
+  if (!response.ok) {
+    console.error("Failed to load module file:", fileName, response.status);
+    throw new Error("Could not load module file " + fileName);
+  }
+
+  const moduleData = await response.json();
+  modulesCache[moduleIndex] = moduleData;
+  return moduleData;
 }
 
 function showHome() {
@@ -30,25 +53,34 @@ function getRandomHomeQuote() {
 
 function showModules() {
   app.innerHTML = `<h2>Select a Module</h2>`;
-  content.modules.forEach(m => {
+  content.modules.forEach((m, index) => {
     const div = document.createElement("div");
     div.className = "module-card";
     div.innerHTML = `<strong>${m.title}</strong>`;
-    div.onclick = () => showChapters(m);
+    div.onclick = () => showChaptersForIndex(index);
     app.appendChild(div);
   });
 }
 
-function showChapters(module) {
-  currentModule = module;
-  app.innerHTML = `<h2>${module.title}</h2>`;
-  module.chapters.forEach(ch => {
-    const div = document.createElement("div");
-    div.className = "chapter-card";
-    div.innerHTML = `<strong>${ch.title}</strong>`;
-    div.onclick = () => showChapterIntro(ch);
-    app.appendChild(div);
-  });
+// New: show chapters for a module by index (loads moduleX.json)
+async function showChaptersForIndex(moduleIndex) {
+  try {
+    const moduleData = await loadModuleByIndex(moduleIndex);
+    currentModule = moduleData;
+    currentModuleIndex = moduleIndex;
+
+    app.innerHTML = `<h2>${moduleData.title}</h2>`;
+    moduleData.chapters.forEach(ch => {
+      const div = document.createElement("div");
+      div.className = "chapter-card";
+      div.innerHTML = `<strong>${ch.title}</strong>`;
+      div.onclick = () => showChapterIntro(ch);
+      app.appendChild(div);
+    });
+  } catch (e) {
+    console.error(e);
+    app.innerHTML = `<h2>Error loading module. Please try again.</h2>`;
+  }
 }
 
 function showChapterIntro(chapter) {
@@ -56,7 +88,7 @@ function showChapterIntro(chapter) {
   currentQuestionIndex = 0;
   app.innerHTML = `
     <h2>${chapter.title}</h2>
-    <div class="quote-box">${chapter.introQuote}</div>
+    <div class="quote-box">${chapter.introQuote || ""}</div>
     <button onclick="startQuestions()">Let's Begin</button>
   `;
 }
@@ -156,95 +188,3 @@ function showFeedback(correct) {
     </div>
     <button onclick="nextQuestion()" style="margin-top:20px;">Next</button>
   `;
-}
-
-function nextQuestion() {
-  helpLevelUsed = "none";
-  questionLocked = false;
-
-  currentQuestionIndex++;
-  if (currentQuestionIndex >= currentChapter.questions.length) {
-    showChapterSummary();
-  } else {
-    showQuestion();
-  }
-}
-
-function saveScore(chapterId, questionId, score) {
-  const key = "ani-progress";
-  let data = JSON.parse(localStorage.getItem(key) || "{}");
-
-  if (!data[chapterId]) data[chapterId] = {};
-  data[chapterId][questionId] = Math.max(data[chapterId][questionId] || 0, score);
-
-  localStorage.setItem(key, JSON.stringify(data));
-}
-
-function showChapterSummary() {
-  const key = "ani-progress";
-  const data = JSON.parse(localStorage.getItem(key) || "{}");
-  const chapterScores = data[currentChapter.id] || {};
-
-  const scores = Object.values(chapterScores);
-  const total = scores.reduce((a, b) => a + b, 0);
-  const avg = (total / currentChapter.questions.length).toFixed(2);
-
-  app.innerHTML = `
-    <h2>${currentChapter.title} — Summary</h2>
-    <div class="score-box">
-      <p><strong>Total Score:</strong> ${total}</p>
-      <p><strong>Average Score:</strong> ${avg}</p>
-    </div>
-    <button onclick="resetChapter()">Reset This Chapter</button>
-    <button onclick="showModules()">Back to Modules</button>
-  `;
-}
-
-function resetChapter() {
-  if (!confirm("Reset this chapter?")) return;
-
-  const key = "ani-progress";
-  let data = JSON.parse(localStorage.getItem(key) || "{}");
-  delete data[currentChapter.id];
-  localStorage.setItem(key, JSON.stringify(data));
-
-  showChapters(currentModule);
-}
-
-function masterReset() {
-  if (!confirm("This will erase ALL progress. Continue?")) return;
-  localStorage.clear();
-  alert("All progress cleared.");
-  showHome();
-}
-
-function showProgress() {
-  const key = "ani-progress";
-  const data = JSON.parse(localStorage.getItem(key) || "{}");
-
-  app.innerHTML = `<h2>Progress</h2>`;
-
-  content.modules.forEach(m => {
-    const h = document.createElement("h3");
-    h.textContent = m.title;
-    app.appendChild(h);
-
-    m.chapters.forEach(ch => {
-      const scores = data[ch.id] ? Object.values(data[ch.id]) : [];
-      const total = scores.reduce((a, b) => a + b, 0);
-      const avg = scores.length ? (total / ch.questions.length).toFixed(2) : "0.00";
-
-      const div = document.createElement("div");
-      div.className = "chapter-card";
-      div.innerHTML = `<strong>${ch.title}</strong><br>Average Score: ${avg}`;
-      app.appendChild(div);
-    });
-  });
-
-  const back = document.createElement("button");
-  back.textContent = "Back";
-  back.onclick = showHome;
-  app.appendChild(back);
-}
-
-loadContent();
