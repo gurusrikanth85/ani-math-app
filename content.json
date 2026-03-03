@@ -362,7 +362,107 @@
           "solution": "180 ÷ 12 = 15, so the original number is 15."
         }
       ]
+    },
+
+
+        {
+      "id": "negatives",
+      "title": "Negatives",
+      "introQuote": "Negative numbers are like steps below zero, Ani — once you understand the rules, the whole number line becomes your playground.",
+      "questions": [
+        {
+          "id": "neg-q1",
+          "questionText": "Which number is smaller?",
+          "choices": ["-3", "-7", "3", "7"],
+          "correctIndex": 1,
+          "hint": "On the number line, left means smaller.",
+          "help": "-7 is further left than -3.",
+          "solution": "-7 is the smallest because it is the farthest left on the number line."
+        },
+        {
+          "id": "neg-q2",
+          "questionText": "What is -5 + 8?",
+          "choices": ["-13", "-3", "3", "13"],
+          "correctIndex": 2,
+          "hint": "Think of starting at -5 and moving 8 steps right.",
+          "help": "-5 + 5 = 0, then 3 more steps gives 3.",
+          "solution": "Starting at -5, moving 8 steps right lands at 3."
+        },
+        {
+          "id": "neg-q3",
+          "questionText": "What is 12 − 17?",
+          "choices": ["-5", "5", "-29", "29"],
+          "correctIndex": 0,
+          "hint": "Subtracting a bigger number gives a negative.",
+          "help": "12 − 17 = 12 − (12 + 5).",
+          "solution": "12 − 17 = -5 because you go 5 steps below zero."
+        },
+        {
+          "id": "neg-q4",
+          "questionText": "Which expression has the largest value?",
+          "choices": ["-3 − 5", "-3 + 5", "3 − 5", "3 + (-5)"],
+          "correctIndex": 1,
+          "hint": "Compute each expression.",
+          "help": "-3 + 5 = 2, which is larger than the others.",
+          "solution": "-3 − 5 = -8, -3 + 5 = 2, 3 − 5 = -2, 3 + (-5) = -2. The largest is 2."
+        },
+        {
+          "id": "neg-q5",
+          "questionText": "What is the opposite of -12?",
+          "choices": ["12", "-12", "0", "-1"],
+          "correctIndex": 0,
+          "hint": "Opposite means same distance from zero, other side.",
+          "help": "The opposite of a negative is a positive.",
+          "solution": "The opposite of -12 is 12."
+        },
+        {
+          "id": "neg-q6",
+          "questionText": "What is -4 × 6?",
+          "choices": ["-24", "24", "-10", "10"],
+          "correctIndex": 0,
+          "hint": "Negative × positive = negative.",
+          "help": "Multiply normally, then apply the sign rule.",
+          "solution": "4 × 6 = 24, and negative × positive = negative, so -24."
+        },
+        {
+          "id": "neg-q7",
+          "questionText": "What is (-3) × (-7)?",
+          "choices": ["-21", "21", "-10", "10"],
+          "correctIndex": 1,
+          "hint": "Negative × negative = positive.",
+          "help": "Multiply 3 × 7 = 21, then apply sign rule.",
+          "solution": "(-3) × (-7) = 21 because a negative times a negative is positive."
+        },
+        {
+          "id": "neg-q8",
+          "questionText": "Ani climbs 5 steps up (+5), then 12 steps down (−12). Where does he end up?",
+          "choices": ["-17", "-7", "7", "17"],
+          "correctIndex": 1,
+          "hint": "Compute +5 − 12.",
+          "help": "5 − 12 = -7.",
+          "solution": "He ends at -7 because 5 − 12 = -7."
+        },
+        {
+          "id": "neg-q9",
+          "questionText": "Which of these is equal to -18 ÷ 3?",
+          "choices": ["6", "-6", "9", "-9"],
+          "correctIndex": 1,
+          "hint": "Negative ÷ positive = negative.",
+          "help": "18 ÷ 3 = 6.",
+          "solution": "-18 ÷ 3 = -6."
+        },
+        {
+          "id": "neg-q10",
+          "questionText": "A number is decreased by 9 and becomes -4. What was the original number?",
+          "choices": ["-13", "5", "13", "-5"],
+          "correctIndex": 1,
+          "hint": "Reverse the operation.",
+          "help": "If x − 9 = -4, then x = -4 + 9.",
+          "solution": "-4 + 9 = 5, so the original number is 5."
+        }
+      ]
     }
+
 
 
     
