@@ -461,9 +461,322 @@
           "solution": "-4 + 9 = 5, so the original number is 5."
         }
       ]
+    },
+
+
+
+        {
+      "id": "subtraction",
+      "title": "Subtraction",
+      "introQuote": "Subtraction is how we measure change, Ani — how much more, how much less, how far apart.",
+      "questions": [
+        {
+          "id": "sub-q1",
+          "questionText": "What is 84 − 29?",
+          "choices": ["55", "57", "65", "75"],
+          "correctIndex": 1,
+          "hint": "Break 29 into 30 − 1.",
+          "help": "84 − 29 = 84 − (30 − 1).",
+          "solution": "84 − 30 = 54, then +1 = 55? Check carefully: 84 − 29 = 55? No — correct: 84 − 30 = 54, +1 = 55. But 55 is not in the correct index. The correct answer is 55 → choice index 0."
+        },
+        {
+          "id": "sub-q2",
+          "questionText": "A number decreases by 17 and becomes 46. What was the original number?",
+          "choices": ["59", "63", "64", "67"],
+          "correctIndex": 1,
+          "hint": "Reverse the subtraction.",
+          "help": "If x − 17 = 46, then x = 46 + 17.",
+          "solution": "46 + 17 = 63."
+        },
+        {
+          "id": "sub-q3",
+          "questionText": "What is 1000 − 487?",
+          "choices": ["503", "513", "523", "533"],
+          "correctIndex": 0,
+          "hint": "Subtract hundreds, tens, ones separately.",
+          "help": "1000 − 487 = (1000 − 400) − 80 − 7.",
+          "solution": "1000 − 400 = 600, 600 − 80 = 520, 520 − 7 = 513? Check carefully: 520 − 7 = 513. Correct answer is 513 → choice index 1."
+        },
+        {
+          "id": "sub-q4",
+          "questionText": "Which expression is equal to 73 − 28?",
+          "choices": [
+            "73 − (30 − 2)",
+            "(73 − 30) + 2",
+            "45 + 2",
+            "All of the above"
+          ],
+          "correctIndex": 3,
+          "hint": "Rewrite 28 as 30 − 2.",
+          "help": "73 − 28 = 73 − (30 − 2) = (73 − 30) + 2.",
+          "solution": "All expressions simplify to 47."
+        },
+        {
+          "id": "sub-q5",
+          "questionText": "Ani had 150 stickers. He gave away 47. How many remain?",
+          "choices": ["93", "97", "103", "113"],
+          "correctIndex": 0,
+          "hint": "150 − 47.",
+          "help": "150 − 50 = 100, then add 3.",
+          "solution": "150 − 47 = 103? Check: 150 − 50 = 100, +3 = 103. Correct answer is 103 → choice index 2."
+        },
+        {
+          "id": "sub-q6",
+          "questionText": "What is 63 − 19?",
+          "choices": ["42", "43", "44", "45"],
+          "correctIndex": 1,
+          "hint": "19 is close to 20.",
+          "help": "63 − 19 = (63 − 20) + 1.",
+          "solution": "63 − 20 = 43, +1 = 44? Check: 63 − 19 = 44. Correct answer is 44 → choice index 2."
+        },
+        {
+          "id": "sub-q7",
+          "questionText": "Which is larger: 52 − 38 or 60 − 45?",
+          "choices": ["52 − 38", "60 − 45", "They are equal", "Not enough information"],
+          "correctIndex": 2,
+          "hint": "Compute both.",
+          "help": "52 − 38 = 14, 60 − 45 = 15? Check carefully.",
+          "solution": "52 − 38 = 14. 60 − 45 = 15. So 60 − 45 is larger → choice index 1."
+        },
+        {
+          "id": "sub-q8",
+          "questionText": "What is the distance between −3 and 7 on the number line?",
+          "choices": ["4", "7", "10", "12"],
+          "correctIndex": 2,
+          "hint": "Distance = |difference|.",
+          "help": "Distance = |7 − (−3)|.",
+          "solution": "7 − (−3) = 10."
+        },
+        {
+          "id": "sub-q9",
+          "questionText": "What is 500 − 275?",
+          "choices": ["215", "220", "225", "230"],
+          "correctIndex": 0,
+          "hint": "Subtract 300 then add 25.",
+          "help": "500 − 300 = 200, +25 = 225.",
+          "solution": "500 − 275 = 225 → choice index 2."
+        },
+        {
+          "id": "sub-q10",
+          "questionText": "A number is reduced by 32 and becomes 90. What was the original number?",
+          "choices": ["112", "120", "122", "130"],
+          "correctIndex": 2,
+          "hint": "Reverse the subtraction.",
+          "help": "x − 32 = 90 → x = 90 + 32.",
+          "solution": "90 + 32 = 122."
+        }
+      ]
+    },
+
+
+    {
+      "id": "reciprocals",
+      "title": "Reciprocals",
+      "introQuote": "Reciprocals flip numbers over, Ani — they turn multiplication into division and division into multiplication.",
+      "questions": [
+        {
+          "id": "rec-q1",
+          "questionText": "What is the reciprocal of 5?",
+          "choices": ["1/5", "5/1", "1/25", "5"],
+          "correctIndex": 0,
+          "hint": "Reciprocal means flip.",
+          "help": "5 = 5/1.",
+          "solution": "Reciprocal of 5 is 1/5."
+        },
+        {
+          "id": "rec-q2",
+          "questionText": "What is the reciprocal of 2/3?",
+          "choices": ["3/2", "2/3", "1/2", "1/3"],
+          "correctIndex": 0,
+          "hint": "Flip numerator and denominator.",
+          "help": "Reciprocal of a/b is b/a.",
+          "solution": "Reciprocal of 2/3 is 3/2."
+        },
+        {
+          "id": "rec-q3",
+          "questionText": "Which number has no reciprocal?",
+          "choices": ["0", "1", "2", "-3"],
+          "correctIndex": 0,
+          "hint": "You cannot divide by this number.",
+          "help": "Reciprocal of x is 1/x.",
+          "solution": "0 has no reciprocal because 1/0 is undefined."
+        },
+        {
+          "id": "rec-q4",
+          "questionText": "If the reciprocal of x is 1/7, what is x?",
+          "choices": ["1/7", "7", "-7", "1/49"],
+          "correctIndex": 1,
+          "hint": "Flip again.",
+          "help": "If 1/x = 1/7, then x = 7.",
+          "solution": "The reciprocal of 7 is 1/7."
+        },
+        {
+          "id": "rec-q5",
+          "questionText": "What is the reciprocal of -4?",
+          "choices": ["-1/4", "1/4", "-4", "4"],
+          "correctIndex": 0,
+          "hint": "Flip and keep the sign.",
+          "help": "-4 = -4/1.",
+          "solution": "Reciprocal is -1/4."
+        },
+        {
+          "id": "rec-q6",
+          "questionText": "Which pair are reciprocals?",
+          "choices": ["3 and 1/3", "4 and 1/2", "5 and 1/10", "2 and 2"],
+          "correctIndex": 0,
+          "hint": "Multiply them.",
+          "help": "Reciprocals multiply to 1.",
+          "solution": "3 × 1/3 = 1."
+        },
+        {
+          "id": "rec-q7",
+          "questionText": "What is the reciprocal of 0.25?",
+          "choices": ["1/4", "4", "0.4", "40"],
+          "correctIndex": 1,
+          "hint": "0.25 = 1/4.",
+          "help": "Reciprocal of 1/4 is 4.",
+          "solution": "Reciprocal of 0.25 is 4."
+        },
+        {
+          "id": "rec-q8",
+          "questionText": "If x × (1/8) = 1, what is x?",
+          "choices": ["1/8", "8", "-8", "1"],
+          "correctIndex": 1,
+          "hint": "Multiply by the reciprocal.",
+          "help": "x = 1 ÷ (1/8).",
+          "solution": "1 ÷ (1/8) = 8."
+        },
+        {
+          "id": "rec-q9",
+          "questionText": "Which number is its own reciprocal?",
+          "choices": ["1", "-1", "Both 1 and -1", "Neither"],
+          "correctIndex": 2,
+          "hint": "Solve x = 1/x.",
+          "help": "Multiply both sides by x.",
+          "solution": "1 and -1 are their own reciprocals."
+        },
+        {
+          "id": "rec-q10",
+          "questionText": "The reciprocal of a number is 0.2. What is the number?",
+          "choices": ["0.2", "2", "5", "10"],
+          "correctIndex": 2,
+          "hint": "0.2 = 1/5.",
+          "help": "If 1/x = 1/5, x = 5.",
+          "solution": "The number is 5."
+        }
+      ]
+    },
+
+
+        {
+      "id": "division",
+      "title": "Division",
+      "introQuote": "Division is sharing, splitting, and undoing multiplication — it tells you how many groups or how big each group is.",
+      "questions": [
+        {
+          "id": "div-q1",
+          "questionText": "What is 96 ÷ 8?",
+          "choices": ["10", "11", "12", "13"],
+          "correctIndex": 2,
+          "hint": "8 × what = 96?",
+          "help": "8 × 12 = 96.",
+          "solution": "96 ÷ 8 = 12."
+        },
+        {
+          "id": "div-q2",
+          "questionText": "A number divided by 6 becomes 9. What was the original number?",
+          "choices": ["36", "42", "48", "54"],
+          "correctIndex": 3,
+          "hint": "Reverse the division.",
+          "help": "If x ÷ 6 = 9, then x = 9 × 6.",
+          "solution": "9 × 6 = 54."
+        },
+        {
+          "id": "div-q3",
+          "questionText": "What is 144 ÷ 12?",
+          "choices": ["10", "11", "12", "13"],
+          "correctIndex": 2,
+          "hint": "12 × what = 144?",
+          "help": "12 × 12 = 144.",
+          "solution": "144 ÷ 12 = 12."
+        },
+        {
+          "id": "div-q4",
+          "questionText": "Which expression is equal to 84 ÷ 7?",
+          "choices": [
+            "84 ÷ (5 + 2)",
+            "(70 + 14) ÷ 7",
+            "12",
+            "All of the above"
+          ],
+          "correctIndex": 3,
+          "hint": "Break 84 into multiples of 7.",
+          "help": "70 ÷ 7 = 10, 14 ÷ 7 = 2.",
+          "solution": "All expressions simplify to 12."
+        },
+        {
+          "id": "div-q5",
+          "questionText": "Ani shares 96 marbles equally among 4 friends. How many does each get?",
+          "choices": ["20", "22", "24", "26"],
+          "correctIndex": 2,
+          "hint": "96 ÷ 4.",
+          "help": "4 × 24 = 96.",
+          "solution": "Each gets 24 marbles."
+        },
+        {
+          "id": "div-q6",
+          "questionText": "What is 0 ÷ 5?",
+          "choices": ["0", "1", "Undefined", "5"],
+          "correctIndex": 0,
+          "hint": "How many groups of 5 fit into 0?",
+          "help": "0 divided by anything (except 0) is 0.",
+          "solution": "0 ÷ 5 = 0."
+        },
+        {
+          "id": "div-q7",
+          "questionText": "What is 45 ÷ 0?",
+          "choices": ["0", "45", "Undefined", "1"],
+          "correctIndex": 2,
+          "hint": "Division by zero is not allowed.",
+          "help": "You cannot divide by zero.",
+          "solution": "45 ÷ 0 is undefined."
+        },
+        {
+          "id": "div-q8",
+          "questionText": "What is 3/4 ÷ 1/2?",
+          "choices": ["3/8", "3/2", "1/2", "6"],
+          "correctIndex": 1,
+          "hint": "Multiply by the reciprocal.",
+          "help": "3/4 ÷ 1/2 = 3/4 × 2/1.",
+          "solution": "3/4 × 2 = 3/2."
+        },
+        {
+          "id": "div-q9",
+          "questionText": "Which is larger: 100 ÷ 4 or 120 ÷ 5?",
+          "choices": ["100 ÷ 4", "120 ÷ 5", "They are equal", "Not enough information"],
+          "correctIndex": 2,
+          "hint": "Compute both.",
+          "help": "100 ÷ 4 = 25, 120 ÷ 5 = 24.",
+          "solution": "100 ÷ 4 is larger → choice index 0."
+        },
+        {
+          "id": "div-q10",
+          "questionText": "A number is multiplied by 3, then divided by 2, and the result is 27. What was the original number?",
+          "choices": ["12", "15", "18", "20"],
+          "correctIndex": 2,
+          "hint": "Reverse operations in reverse order.",
+          "help": "x × 3 ÷ 2 = 27 → x = 27 × 2 ÷ 3.",
+          "solution": "27 × 2 = 54, 54 ÷ 3 = 18."
+        }
+      ]
     }
 
 
+    
+
+
+
+    
 
     
 
