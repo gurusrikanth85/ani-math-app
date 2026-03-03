@@ -64,12 +64,27 @@ function startQuestions() {
   showQuestion();
 }
 
+function showProgressBar() {
+  const total = currentChapter.questions.length;
+  const current = currentQuestionIndex;
+  const percent = Math.floor((current / total) * 100);
+
+  return `
+    <div class="progress-container">
+      <div class="progress-bar" style="width:${percent}%"></div>
+    </div>
+  `;
+}
+
 function showQuestion() {
   const q = currentChapter.questions[currentQuestionIndex];
   helpLevelUsed = "none";
 
   app.innerHTML = `
     <h2>${currentChapter.title}</h2>
+
+    ${showProgressBar()}
+
     <p><strong>Question ${currentQuestionIndex + 1} of ${currentChapter.questions.length}</strong></p>
     <p>${q.questionText}</p>
 
@@ -103,13 +118,34 @@ function submitAnswer(choiceIndex) {
   const correct = q.correctIndex === choiceIndex;
 
   let score = 0;
-  if (helpLevelUsed === "none") score = 10;
-  if (helpLevelUsed === "hint") score = 8;
-  if (helpLevelUsed === "help") score = 5;
-  if (helpLevelUsed === "solve") score = 0;
+
+  if (correct) {
+    if (helpLevelUsed === "none") score = 10;
+    else if (helpLevelUsed === "hint") score = 8;
+    else if (helpLevelUsed === "help") score = 5;
+    else if (helpLevelUsed === "solve") score = 0;
+  } else {
+    score = 0;
+  }
 
   saveScore(currentChapter.id, q.id, score);
 
+  showFeedback(correct);
+}
+
+function showFeedback(correct) {
+  const message = correct ? "Correct! Great job!" : "Incorrect. Keep trying!";
+  const color = correct ? "green" : "red";
+
+  app.innerHTML += `
+    <div class="feedback" style="color:${color}; font-weight:bold; margin-top:20px;">
+      ${message}
+    </div>
+    <button onclick="nextQuestion()" style="margin-top:20px;">Next</button>
+  `;
+}
+
+function nextQuestion() {
   currentQuestionIndex++;
   if (currentQuestionIndex >= currentChapter.questions.length) {
     showChapterSummary();
