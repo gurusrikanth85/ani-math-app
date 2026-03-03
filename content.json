@@ -246,7 +246,132 @@
           "solution": "120 − 47 = 120 − 40 − 7 = 80 − 7 = 73. So the other number is 73."
         }
       ]
+    },
+
+
+
+
+        {
+      "id": "multiplication",
+      "title": "Multiplication",
+      "introQuote": "Multiplication is powerful, Ani — it turns repeated steps into one smart move.",
+      "questions": [
+        {
+          "id": "mul-q1",
+          "questionText": "What is 14 × 6?",
+          "choices": ["64", "74", "84", "94"],
+          "correctIndex": 2,
+          "hint": "Break 14 into 10 + 4.",
+          "help": "14 × 6 = (10 × 6) + (4 × 6).",
+          "solution": "10 × 6 = 60 and 4 × 6 = 24. Total = 84."
+        },
+        {
+          "id": "mul-q2",
+          "questionText": "A number is multiplied by 7 and the result is 91. What was the original number?",
+          "choices": ["11", "12", "13", "14"],
+          "correctIndex": 2,
+          "hint": "Reverse the multiplication.",
+          "help": "If 7x = 91, then x = 91 ÷ 7.",
+          "solution": "91 ÷ 7 = 13, so the original number is 13."
+        },
+        {
+          "id": "mul-q3",
+          "questionText": "Which expression is equal to 8 × 15?",
+          "choices": [
+            "8 × (10 + 5)",
+            "(8 × 10) + (8 × 5)",
+            "120 + 40",
+            "All of the above"
+          ],
+          "correctIndex": 3,
+          "hint": "Think distributive property.",
+          "help": "8 × (10 + 5) = (8 × 10) + (8 × 5).",
+          "solution": "All three expressions represent 8 × 15, so the answer is 'All of the above'."
+        },
+        {
+          "id": "mul-q4",
+          "questionText": "Ani calculates 19 × 7 quickly. Which is the best strategy?",
+          "choices": [
+            "19 × 7 = (20 × 7) − 7",
+            "19 × 7 = (10 × 7) + 9",
+            "19 × 7 = 19 + 7",
+            "19 × 7 = (19 × 10) − 3"
+          ],
+          "correctIndex": 0,
+          "hint": "19 is close to 20.",
+          "help": "20 × 7 = 140, then subtract 7.",
+          "solution": "19 × 7 = (20 × 7) − 7 = 140 − 7 = 133."
+        },
+        {
+          "id": "mul-q5",
+          "questionText": "Which number is a multiple of both 6 and 8?",
+          "choices": ["24", "30", "36", "40"],
+          "correctIndex": 0,
+          "hint": "Find the LCM of 6 and 8.",
+          "help": "Multiples of 6: 6, 12, 18, 24, 30, 36... Multiples of 8: 8, 16, 24, 32, 40...",
+          "solution": "24 appears in both lists, so it is a multiple of both 6 and 8."
+        },
+        {
+          "id": "mul-q6",
+          "questionText": "What is 32 × 25?",
+          "choices": ["600", "700", "750", "800"],
+          "correctIndex": 3,
+          "hint": "25 × 4 = 100.",
+          "help": "32 × 25 = (32 ÷ 4) × 100.",
+          "solution": "32 ÷ 4 = 8, so 8 × 100 = 800."
+        },
+        {
+          "id": "mul-q7",
+          "questionText": "Which is larger: 17 × 12 or 20 × 10?",
+          "choices": ["17 × 12", "20 × 10", "They are equal", "Not enough information"],
+          "correctIndex": 0,
+          "hint": "Calculate both.",
+          "help": "20 × 10 = 200. 17 × 12 = (17 × 10) + (17 × 2).",
+          "solution": "17 × 10 = 170 and 17 × 2 = 34, total = 204. So 17 × 12 is larger."
+        },
+        {
+          "id": "mul-q8",
+          "questionText": "A rectangle has length 18 cm and width 14 cm. What is its area?",
+          "choices": ["182", "196", "212", "252"],
+          "correctIndex": 3,
+          "hint": "Area = length × width.",
+          "help": "18 × 14 = (18 × 10) + (18 × 4).",
+          "solution": "18 × 10 = 180 and 18 × 4 = 72. Total = 252."
+        },
+        {
+          "id": "mul-q9",
+          "questionText": "Which of these is equal to 9 × 27?",
+          "choices": [
+            "9 × (30 − 3)",
+            "(9 × 30) − (9 × 3)",
+            "270 − 27",
+            "All of the above"
+          ],
+          "correctIndex": 3,
+          "hint": "Use distributive property again.",
+          "help": "9 × (30 − 3) = (9 × 30) − (9 × 3).",
+          "solution": "All three expressions simplify to 243, so 'All of the above' is correct."
+        },
+        {
+          "id": "mul-q10",
+          "questionText": "A number is multiplied by 4, then by 3, and the result is 180. What was the original number?",
+          "choices": ["10", "12", "15", "20"],
+          "correctIndex": 2,
+          "hint": "Reverse the operations.",
+          "help": "If x × 4 × 3 = 180, then x = 180 ÷ 12.",
+          "solution": "180 ÷ 12 = 15, so the original number is 15."
+        }
+      ]
     }
+
+
+    
+
+
+
+
+
+    
   ]
 }
 
