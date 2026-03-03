@@ -130,7 +130,120 @@
               "hint": "Think about how operations behave.",
               "help": "Arithmetic follows consistent rules.",
               "solution": "Arithmetic is a system of patterns and rules that help us understand numbers."
+            },
+                    {
+          "id": "addition",
+          "title": "Addition",
+          "introQuote": "Addition is like stacking blocks, Ani — each number makes the tower taller.",
+          "questions": [
+            {
+              "id": "add-q1",
+              "questionText": "What is 37 + 48?",
+              "choices": ["75", "77", "83", "85"],
+              "correctIndex": 2,
+              "hint": "Add tens and ones separately.",
+              "help": "37 + 48 = (30 + 40) + (7 + 8) = 70 + 15.",
+              "solution": "Add tens: 30 + 40 = 70. Add ones: 7 + 8 = 15. Then 70 + 15 = 85. So the answer is 85."
+            },
+            {
+              "id": "add-q2",
+              "questionText": "A number increases by 17 and becomes 63. What was the original number?",
+              "choices": ["46", "47", "48", "50"],
+              "correctIndex": 1,
+              "hint": "Reverse the operation.",
+              "help": "If x + 17 = 63, then x = 63 − 17.",
+              "solution": "63 − 17 = 46? Check carefully: 63 − 10 = 53, 53 − 7 = 46. So the original number is 46."
+            },
+            {
+              "id": "add-q3",
+              "questionText": "Which sum is equal to 3 + 3 + 3 + 3 + 3?",
+              "choices": ["3 × 4", "3 × 5", "5 × 3", "Both B and C"],
+              "correctIndex": 3,
+              "hint": "How many 3s are being added?",
+              "help": "There are five 3s.",
+              "solution": "3 + 3 + 3 + 3 + 3 is five groups of 3, so it equals 3 × 5 and also 5 × 3. Both B and C are correct."
+            },
+            {
+              "id": "add-q4",
+              "questionText": "Ani adds 256 and 399 in his head. Which is the easiest way?",
+              "choices": [
+                "256 + 399 = 256 + 400 − 1",
+                "256 + 399 = 200 + 300",
+                "256 + 399 = 250 + 350",
+                "256 + 399 = 256 − 1"
+              ],
+              "correctIndex": 0,
+              "hint": "Think about making a round number.",
+              "help": "399 is close to 400.",
+              "solution": "256 + 399 = 256 + (400 − 1) = (256 + 400) − 1 = 656 − 1 = 655. This method uses a friendly number."
+            },
+            {
+              "id": "add-q5",
+              "questionText": "What is 1 + 2 + 3 + 4 + 5?",
+              "choices": ["10", "12", "14", "15"],
+              "correctIndex": 3,
+              "hint": "Pair numbers from the ends.",
+              "help": "1 + 5 and 2 + 4 make nice pairs.",
+              "solution": "1 + 5 = 6, 2 + 4 = 6, and then add 3: 6 + 6 + 3 = 15."
+            },
+            {
+              "id": "add-q6",
+              "questionText": "A shop sells 18 pencils in one pack and 27 in another. If Ani buys one of each pack, how many pencils does he have?",
+              "choices": ["35", "40", "45", "50"],
+              "correctIndex": 2,
+              "hint": "Add 18 and 27.",
+              "help": "18 + 27 = (10 + 20) + (8 + 7).",
+              "solution": "18 + 27 = 10 + 20 + 8 + 7 = 30 + 15 = 45. So Ani has 45 pencils."
+            },
+            {
+              "id": "add-q7",
+              "questionText": "Which expression has the same value as 100 + 99?",
+              "choices": [
+                "2 × 100",
+                "200 − 1",
+                "100 − 99",
+                "99 − 100"
+              ],
+              "correctIndex": 1,
+              "hint": "Think of 99 as 100 − 1.",
+              "help": "100 + 99 = 100 + (100 − 1).",
+              "solution": "100 + 99 = 100 + (100 − 1) = 200 − 1 = 199."
+            },
+            {
+              "id": "add-q8",
+              "questionText": "Ani adds three numbers: 24, 37, and 16. What is the total?",
+              "choices": ["67", "77", "87", "97"],
+              "correctIndex": 1,
+              "hint": "Group numbers to make a round number.",
+              "help": "24 + 16 makes a nice pair.",
+              "solution": "24 + 16 = 40. Then 40 + 37 = 77. So the total is 77."
+            },
+            {
+              "id": "add-q9",
+              "questionText": "Which of these is the BEST mental strategy for 499 + 502?",
+              "choices": [
+                "Add 500 + 500 and subtract 1.",
+                "Add 400 + 500.",
+                "Add 499 + 400.",
+                "Subtract 502 from 499."
+              ],
+              "correctIndex": 0,
+              "hint": "Both numbers are close to 500.",
+              "help": "Think of 499 as 500 − 1 and 502 as 500 + 2.",
+              "solution": "499 + 502 = (500 − 1) + (500 + 2) = 500 + 500 + 1 = 1001. The strategy 500 + 500 − 1 is the easiest."
+            },
+            {
+              "id": "add-q10",
+              "questionText": "The sum of two numbers is 120. One of them is 47. What is the other?",
+              "choices": ["63", "67", "73", "83"],
+              "correctIndex": 1,
+              "hint": "Think: 47 + ? = 120.",
+              "help": "Subtract 47 from 120.",
+              "solution": "120 − 47 = 120 − 40 − 7 = 80 − 7 = 73? Check carefully: 120 − 47 = 73, so the correct answer is 73."
             }
+          ]
+        }
+
           ]
         }
       ]
