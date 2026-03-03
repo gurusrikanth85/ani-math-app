@@ -3,6 +3,7 @@ let currentModule = null;
 let currentChapter = null;
 let currentQuestionIndex = 0;
 let helpLevelUsed = "none";
+let questionLocked = false;
 
 const app = document.getElementById("app");
 
@@ -79,6 +80,7 @@ function showProgressBar() {
 function showQuestion() {
   const q = currentChapter.questions[currentQuestionIndex];
   helpLevelUsed = "none";
+  questionLocked = false;
 
   app.innerHTML = `
     <h2>${currentChapter.title}</h2>
@@ -89,7 +91,7 @@ function showQuestion() {
     <p>${q.questionText}</p>
 
     ${q.choices.map((c, i) => `
-      <div class="choice" onclick="submitAnswer(${i})">${c}</div>
+      <div class="choice" id="choice-${i}" onclick="submitAnswer(${i})">${c}</div>
     `).join("")}
 
     <button onclick="showHint()">Hint</button>
@@ -114,6 +116,9 @@ function showSolution() {
 }
 
 function submitAnswer(choiceIndex) {
+  if (questionLocked) return;
+  questionLocked = true;
+
   const q = currentChapter.questions[currentQuestionIndex];
   const correct = q.correctIndex === choiceIndex;
 
@@ -130,7 +135,15 @@ function submitAnswer(choiceIndex) {
 
   saveScore(currentChapter.id, q.id, score);
 
+  lockChoices();
   showFeedback(correct);
+}
+
+function lockChoices() {
+  document.querySelectorAll(".choice").forEach(c => {
+    c.style.pointerEvents = "none";
+    c.style.opacity = "0.6";
+  });
 }
 
 function showFeedback(correct) {
@@ -146,6 +159,9 @@ function showFeedback(correct) {
 }
 
 function nextQuestion() {
+  helpLevelUsed = "none";
+  questionLocked = false;
+
   currentQuestionIndex++;
   if (currentQuestionIndex >= currentChapter.questions.length) {
     showChapterSummary();
