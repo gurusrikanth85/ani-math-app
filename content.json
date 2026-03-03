@@ -1,22 +1,5 @@
 {
-  // ---------------------------------------------------------
-  // TOP-LEVEL CONTENT METADATA
-  // ---------------------------------------------------------
-  // This file now contains ONLY:
-  // - version
-  // - homeQuotes
-  // - module list (titles + ids only)
-  //
-  // The actual module content lives in:
-  //   content/module1.json
-  //   content/module2.json
-  //
-  // app.js loads this file first, then loads each module
-  // dynamically using loadModuleByIndex().
-  // ---------------------------------------------------------
-
   "version": "pack-1",
-
   "homeQuotes": [
     "Math is a superpower, Ani — let’s train it!",
     "Numbers don’t bite… unless you divide by zero.",
@@ -26,7 +9,6 @@
     "Math is a puzzle. Solving it feels awesome.",
     "Even the hardest problems start with simple arithmetic."
   ],
-
   "modules": [
     {
       "id": "arithmetic-foundations",
