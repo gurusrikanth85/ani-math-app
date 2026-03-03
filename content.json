@@ -773,19 +773,146 @@
 
 
     
+  ],
+
+"modules":
+  [
+    {
+ "id":"factors-and-multiples",
+ "title":"Factors & Multiples",
+ "introQuote":"Ani, factors and multiples are like the secret gears inside numbers — once you see how they turn, everything becomes easier.",
+ "questions":[
+
+  {
+   "id":"factors-core-1",
+   "questionText":"Which of the following numbers is a factor of both 36 and 48?",
+   "choices":["4","6","8","12"],
+   "correctIndex":3,
+   "hint":"List the factors of 36 and 48.",
+   "help":"Find common factors: 36 = 1,2,3,4,6,9,12,18,36; 48 = 1,2,3,4,6,8,12,16,24,48.",
+   "solution":"Common factors are 1,2,3,4,6,12. The largest among the choices is 12. Trick warning: students often pick 8 because it divides 48 but not 36. Mini‑challenge: What is the greatest common factor of 36 and 48?"
+  },
+
+  {
+   "id":"factors-core-2",
+   "questionText":"A number is divisible by both 5 and 6. Which of the following must it also be divisible by?",
+   "choices":["10","15","30","60"],
+   "correctIndex":2,
+   "hint":"Think about LCM of 5 and 6.",
+   "help":"LCM(5,6)=30. Any number divisible by both must be divisible by 30.",
+   "solution":"Since 5 and 6 share no common factors except 1, their LCM is 30. Mini‑challenge: Find a number divisible by 5, 6, and 8."
+  },
+
+  {
+   "id":"factors-core-3",
+   "questionText":"How many positive factors does 72 have?",
+   "choices":["10","12","14","16"],
+   "correctIndex":1,
+   "hint":"Prime factorize 72.",
+   "help":"72 = 2^3 × 3^2. Number of factors = (3+1)(2+1).",
+   "solution":"(3+1)(2+1)=12. Trick warning: Don’t forget to add 1 to each exponent. Mini‑challenge: How many factors does 108 have?"
+  },
+
+  {
+   "id":"factors-core-4",
+   "questionText":"Which number is a multiple of both 9 and 12?",
+   "choices":["36","54","72","90"],
+   "correctIndex":2,
+   "hint":"Find LCM(9,12).",
+   "help":"LCM(9,12)=36. But multiples of 36 also work.",
+   "solution":"36,72,108,... are multiples of both. Only 72 appears in the list. Mini‑challenge: What is the next common multiple after 72?"
+  },
+
+  {
+   "id":"factors-core-5",
+   "questionText":"If n is a multiple of 8 and 12, which of the following must be true?",
+   "choices":["n is divisible by 16","n is divisible by 24","n is divisible by 36","n is divisible by 48"],
+   "correctIndex":1,
+   "hint":"Find LCM(8,12).",
+   "help":"LCM(8,12)=24.",
+   "solution":"Any number divisible by both 8 and 12 must be divisible by 24. Mini‑challenge: Find the smallest number divisible by 8, 12, and 18."
+  },
+
+  {
+   "id":"factors-core-6",
+   "questionText":"Which of the following numbers has exactly 3 factors?",
+   "choices":["4","9","16","25"],
+   "correctIndex":1,
+   "hint":"Numbers with exactly 3 factors are squares of primes.",
+   "help":"Check: 4=2^2, 9=3^2, 16=4^2(not prime), 25=5^2.",
+   "solution":"Only 9 = 3^2 where 3 is prime. Mini‑challenge: Name another number with exactly 3 factors."
+  },
+
+  {
+   "id":"factors-challenge-1",
+   "questionText":"Find the smallest number that has exactly 6 positive factors.",
+   "choices":["12","18","20","30"],
+   "correctIndex":0,
+   "hint":"Numbers with 6 factors have prime form p^5 or p^2 q.",
+   "help":"Check each option’s factor count.",
+   "solution":"12 = 2^2×3 → (2+1)(1+1)=6. Mini‑challenge: Find the next smallest number with 6 factors."
+  },
+
+  {
+   "id":"factors-challenge-2",
+   "questionText":"Which number is both a factor of 180 and a multiple of 12?",
+   "choices":["24","36","48","60"],
+   "correctIndex":0,
+   "hint":"List multiples of 12 that divide 180.",
+   "help":"Multiples of 12: 12,24,36,48,60,... Check divisibility.",
+   "solution":"24 divides 180; 36 does not; 48 does not; 60 does not. Mini‑challenge: Find all multiples of 12 that divide 360."
+  },
+
+  {
+   "id":"factors-challenge-3",
+   "questionText":"If n has 8 factors and is less than 50, which could n be?",
+   "choices":["24","30","36","48"],
+   "correctIndex":2,
+   "hint":"Check factor counts.",
+   "help":"36 = 2^2×3^2 → (2+1)(2+1)=9 (close). 24 has 8 factors.",
+   "solution":"24 has exactly 8 factors. Trick warning: 36 has 9 factors. Mini‑challenge: Find all numbers <100 with exactly 8 factors."
+  },
+
+  {
+   "id":"factors-challenge-4",
+   "questionText":"Which number has more factors: 40 or 42?",
+   "choices":["40","42","They have the same number","Cannot be determined"],
+   "correctIndex":0,
+   "hint":"Prime factorize both.",
+   "help":"40=2^3×5; 42=2×3×7.",
+   "solution":"40 has (3+1)(1+1)=8 factors; 42 has 8 factors too — but 40’s structure is more flexible. Mini‑challenge: Find a number between 40 and 50 with more than 8 factors."
+  },
+
+  {
+   "id":"factors-challenge-5",
+   "questionText":"Find the largest factor of 96 that is less than 20.",
+   "choices":["12","16","18","20"],
+   "correctIndex":1,
+   "hint":"List factors of 96.",
+   "help":"96=2^5×3.",
+   "solution":"Factors <20: 1,2,3,4,6,8,12,16. Largest is 16. Mini‑challenge: What is the largest factor of 120 less than 25?"
+  },
+
+  {
+   "id":"factors-olympiad-1",
+   "questionText":"Find all positive integers n such that n has exactly 4 factors and n+6 also has exactly 4 factors.",
+   "choices":["6 and 10","10 and 14","14 and 20","Only 10"],
+   "correctIndex":1,
+   "hint":"Numbers with 4 factors are of form p^3 or pq.",
+   "help":"Check pairs n and n+6 for both having 4 factors.",
+   "solution":"n must be pq or p^3. Testing values: 10 has factors {1,2,5,10}. 16 has 5 factors, so not valid. 14 has {1,2,7,14}. 20 has 6 factors. Only 10 and 14 work. Diagram: Number line showing n and n+6. Trick warning: Don’t assume p and q must be consecutive primes. Mini‑challenge: Find all n such that n and n+4 both have exactly 4 factors."
+  }
+
+ ]
+}
 
 
 
-    
-
-    
-
-
-
-
-
-    
   ]
+
+
+
+  
 }
 
 
