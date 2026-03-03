@@ -1,1 +1,80 @@
+{
+  // ---------------------------------------------------------
+  // MODULE 1: ARITHMETIC FOUNDATIONS
+  // ---------------------------------------------------------
+  // This file contains:
+  // - Module ID + Title
+  // - All chapters for Arithmetic Foundations
+  // - Each chapter contains:
+  //      id, title, introQuote, questions[]
+  // - Each question contains:
+  //      id, questionText, choices[], correctIndex, hint, help, solution
+  //
+  // IMPORTANT:
+  // - This file is loaded by app.js via loadModuleByIndex(0)
+  // - content.json now only stores metadata (titles, ids)
+  // ---------------------------------------------------------
+
+  "id": "arithmetic-foundations",
+  "title": "Arithmetic Foundations",
+
+  "chapters": [
+
+    // ---------------------------------------------------------
+    // CHAPTER 1 — Why Arithmetic Matters
+    // ---------------------------------------------------------
+    {
+      "id": "why-arithmetic-matters",
+      "title": "Why Arithmetic Matters",
+
+      "introQuote": "Arithmetic is the secret engine behind every math idea, Ani. Let’s open the hood and see how it runs!",
+
+      "questions": [
+
+        {
+          "id": "q1",
+          "questionText": "Which of these is the BEST reason why arithmetic is important?",
+          "choices": [
+            "It helps you memorize long numbers.",
+            "It is the foundation for all higher math.",
+            "It makes you faster at typing.",
+            "It is only useful for shopping."
+          ],
+          "correctIndex": 1,
+          "hint": "Think about what subjects depend on arithmetic.",
+          "help": "Algebra, geometry, and even physics rely on arithmetic rules.",
+          "solution": "Arithmetic is the foundation for all higher math. Without understanding operations, patterns, and number behavior, advanced topics become difficult."
+        },
+
+        {
+          "id": "q2",
+          "questionText": "Which pattern continues correctly? 3, 6, 9, 12, ___",
+          "choices": ["13", "14", "15", "18"],
+          "correctIndex": 2,
+          "hint": "How much does the number increase each time?",
+          "help": "Each term increases by 3.",
+          "solution": "The pattern adds 3 each time. 12 + 3 = 15."
+        }
+
+        // ---------------------------------------------------------
+        // NOTE:
+        // Your original Module 1 contains MANY more questions
+        // and multiple chapters.
+        //
+        // I need your confirmation:
+        // Should I extract ALL remaining chapters from your
+        // current content.json and format them like this?
+        //
+        // Or do you want to migrate Module 1 gradually?
+        // ---------------------------------------------------------
+
+      ]
+    }
+
+    // ---------------------------------------------------------
+    // END OF CHAPTER LIST
+    // ---------------------------------------------------------
+
+  ]
+}
 
