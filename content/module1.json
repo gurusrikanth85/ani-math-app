@@ -1,45 +1,12 @@
 {
-  // ---------------------------------------------------------
-  // MODULE 1: ARITHMETIC FOUNDATIONS (Brand‑New Version)
-  // ---------------------------------------------------------
-  // This module introduces:
-  // - Number sense
-  // - Place value
-  // - Addition & subtraction mastery
-  // - Multiplication & division foundations
-  // - Patterns & reasoning
-  //
-  // Structure:
-  //   id: unique module identifier
-  //   title: module title
-  //   chapters: array of chapter objects
-  //
-  // Each chapter contains:
-  //   id, title, introQuote, questions[]
-  //
-  // Each question contains:
-  //   id, questionText, choices[], correctIndex, hint, help, solution
-  //
-  // This file is loaded by:
-  //   loadModuleByIndex(0)
-  // ---------------------------------------------------------
-
   "id": "arithmetic-foundations",
   "title": "Arithmetic Foundations",
-
   "chapters": [
-
-    // =========================================================
-    // CHAPTER 1 — Number Sense & Place Value
-    // =========================================================
     {
       "id": "place-value-basics",
       "title": "Number Sense & Place Value",
-
       "introQuote": "Numbers are like buildings, Ani — place value is the blueprint that keeps everything standing straight.",
-
       "questions": [
-
         {
           "id": "pv-1",
           "questionText": "What is the value of the digit 7 in the number 7,482?",
@@ -49,7 +16,6 @@
           "help": "The first digit from the left is the thousands place.",
           "solution": "7 is in the thousands place, so its value is 7000."
         },
-
         {
           "id": "pv-2",
           "questionText": "Which number is the greatest?",
@@ -59,7 +25,6 @@
           "help": "All numbers start with 5, so compare the hundreds digit.",
           "solution": "5,930 is the largest because 9 hundreds is greater than 3, 0, or 0 hundreds."
         },
-
         {
           "id": "pv-3",
           "questionText": "Which number rounds to 3,500 when rounded to the nearest hundred?",
@@ -69,7 +34,6 @@
           "help": "Numbers from 3,450 to 3,549 round to 3,500.",
           "solution": "3,449 rounds to 3,400? No — tens digit is 4, so it rounds down to 3,400. Wait — check carefully: 3,449 → nearest hundred = 3,400. Correct answer is 3,421? No. 3,551 → 3,600. 3,620 → 3,600. Correct answer is NONE? Let's fix choices. Correct choice is 3,451. (Fixed below.)"
         },
-
         {
           "id": "pv-3-fixed",
           "questionText": "Which number rounds to 3,500 when rounded to the nearest hundred?",
@@ -79,21 +43,13 @@
           "help": "Check whether the tens digit is 5 or more.",
           "solution": "3,451 is between 3,450 and 3,549, so it rounds to 3,500."
         }
-
       ]
     },
-
-    // =========================================================
-    // CHAPTER 2 — Addition & Subtraction Mastery
-    // =========================================================
     {
       "id": "add-sub-mastery",
       "title": "Addition & Subtraction Mastery",
-
       "introQuote": "Adding and subtracting are like moving forward and backward on a number line — the trick is knowing how far you’ve gone.",
-
       "questions": [
-
         {
           "id": "as-1",
           "questionText": "What is 4,382 + 5,619?",
@@ -103,7 +59,6 @@
           "help": "4,382 + 5,619 = (4,000+5,000) + (300+600) + (80+10) + (2+9).",
           "solution": "4,382 + 5,619 = 9,991."
         },
-
         {
           "id": "as-2",
           "questionText": "What is 8,000 − 3,457?",
@@ -113,7 +68,6 @@
           "help": "Think of 8,000 as 7,900 + 100.",
           "solution": "8,000 − 3,457 = 4,543."
         },
-
         {
           "id": "as-3",
           "questionText": "Ani has 245 stickers. He gives 89 to a friend. How many remain?",
@@ -123,21 +77,13 @@
           "help": "Borrow from the tens place.",
           "solution": "245 − 89 = 156."
         }
-
       ]
     },
-
-    // =========================================================
-    // CHAPTER 3 — Multiplication Foundations
-    // =========================================================
     {
       "id": "multiplication-basics",
       "title": "Multiplication Foundations",
-
       "introQuote": "Multiplication is repeated addition — but much faster, cleaner, and more powerful.",
-
       "questions": [
-
         {
           "id": "m-1",
           "questionText": "What is 7 × 8?",
@@ -147,7 +93,6 @@
           "help": "7 × 4 = 28, doubled is 56.",
           "solution": "7 × 8 = 56."
         },
-
         {
           "id": "m-2",
           "questionText": "Which expression is equal to 6 × 12?",
@@ -157,7 +102,6 @@
           "help": "6 × (10 + 2) = 6×10 + 6×2.",
           "solution": "6 × 12 = 72, and 6 × (10 + 2) also equals 72."
         },
-
         {
           "id": "m-3",
           "questionText": "What is 15 × 14?",
@@ -167,21 +111,13 @@
           "help": "15×10 = 150, 15×4 = 60.",
           "solution": "150 + 60 = 210."
         }
-
       ]
     },
-
-    // =========================================================
-    // CHAPTER 4 — Division Basics
-    // =========================================================
     {
       "id": "division-basics",
       "title": "Division Basics",
-
       "introQuote": "Division is sharing — but with rules that make sure everything is fair and exact.",
-
       "questions": [
-
         {
           "id": "d-1",
           "questionText": "What is 56 ÷ 7?",
@@ -191,7 +127,6 @@
           "help": "7 × 8 = 56.",
           "solution": "56 ÷ 7 = 8."
         },
-
         {
           "id": "d-2",
           "questionText": "Ani has 96 marbles. He packs them into bags of 8. How many bags can he fill?",
@@ -201,7 +136,6 @@
           "help": "8 × 12 = 96.",
           "solution": "He can fill 12 bags."
         },
-
         {
           "id": "d-3",
           "questionText": "Which of the following is a correct division fact?",
@@ -211,9 +145,7 @@
           "help": "4 × 3 = 12.",
           "solution": "12 ÷ 4 = 3 is correct."
         }
-
       ]
     }
-
   ]
 }
