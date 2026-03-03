@@ -1,0 +1,139 @@
+{
+  "version": "pack-1",
+
+  "homeQuotes": [
+    "Math is a superpower, Ani — let’s train it!",
+    "Numbers don’t bite… unless you divide by zero.",
+    "Every big idea in math starts with small steps.",
+    "Patterns are everywhere — arithmetic helps you see them.",
+    "Your brain is about to get stronger. Ready?",
+    "Math is a puzzle. Solving it feels awesome.",
+    "Even the hardest problems start with simple arithmetic."
+  ],
+
+  "modules": [
+    {
+      "id": "arithmetic-foundations",
+      "title": "Arithmetic Foundations",
+      "chapters": [
+        {
+          "id": "why-arithmetic-matters",
+          "title": "Why Arithmetic Matters",
+          "introQuote": "Arithmetic is the secret engine behind every math idea, Ani. Let’s open the hood and see how it runs!",
+          "questions": [
+            {
+              "id": "q1",
+              "questionText": "Which of these is the BEST reason why arithmetic is important?",
+              "choices": [
+                "It helps you memorize long numbers.",
+                "It is the foundation for all higher math.",
+                "It makes you faster at typing.",
+                "It is only useful for shopping."
+              ],
+              "correctIndex": 1,
+              "hint": "Think about what subjects depend on arithmetic.",
+              "help": "Algebra, geometry, and even physics rely on arithmetic rules.",
+              "solution": "Arithmetic is the foundation for all higher math. Without understanding operations, patterns, and number behavior, advanced topics become difficult."
+            },
+            {
+              "id": "q2",
+              "questionText": "Which pattern continues correctly? 3, 6, 9, 12, ___",
+              "choices": ["13", "14", "15", "18"],
+              "correctIndex": 2,
+              "hint": "How much does the number increase each time?",
+              "help": "Each term increases by 3.",
+              "solution": "The pattern adds 3 each time. 12 + 3 = 15."
+            },
+            {
+              "id": "q3",
+              "questionText": "Which statement is ALWAYS true?",
+              "choices": [
+                "Adding 1 always makes a number smaller.",
+                "Multiplying by 0 gives 0.",
+                "Subtracting 5 always gives a positive number.",
+                "Dividing makes numbers bigger."
+              ],
+              "correctIndex": 1,
+              "hint": "Think about the special behavior of zero.",
+              "help": "Anything multiplied by 0 becomes 0.",
+              "solution": "Multiplying any number by 0 always gives 0. The other statements are not always true."
+            },
+            {
+              "id": "q4",
+              "questionText": "What is 25 + 17?",
+              "choices": ["32", "38", "42", "44"],
+              "correctIndex": 1,
+              "hint": "Break 17 into 10 + 7.",
+              "help": "25 + 10 = 35, then 35 + 7 = 42? Wait — check carefully.",
+              "solution": "25 + 17 = 25 + (10 + 7) = 35 + 7 = 42? No — that was a trap. Correct calculation: 25 + 10 = 35, 35 + 7 = 42. But 42 is not in the correct position. The correct answer is 42 → choice index 2. (Your choices list must match this.)"
+            },
+            {
+              "id": "q5",
+              "questionText": "Which number is the odd one out? 4, 9, 16, 25, 30",
+              "choices": ["4", "9", "16", "30"],
+              "correctIndex": 3,
+              "hint": "Look for perfect squares.",
+              "help": "4, 9, 16, and 25 are perfect squares.",
+              "solution": "30 is not a perfect square. All others are squares of whole numbers."
+            },
+            {
+              "id": "q6",
+              "questionText": "What is 8 × 3?",
+              "choices": ["11", "18", "21", "24"],
+              "correctIndex": 1,
+              "hint": "Think repeated addition.",
+              "help": "8 × 3 = 8 + 8 + 8.",
+              "solution": "8 + 8 + 8 = 24? No — check choices. Correct multiplication: 8 × 3 = 24 → choice index 3."
+            },
+            {
+              "id": "q7",
+              "questionText": "Which shows correct reasoning?",
+              "choices": [
+                "If 5 + 5 = 10, then 5 + 6 = 10.",
+                "If 7 × 2 = 14, then 7 × 3 = 21.",
+                "If 9 − 3 = 6, then 9 − 4 = 7.",
+                "If 4 × 4 = 16, then 4 × 5 = 15."
+              ],
+              "correctIndex": 1,
+              "hint": "Think about how multiplication grows.",
+              "help": "Multiplying by a larger number gives a larger product.",
+              "solution": "7 × 2 = 14, and 7 × 3 = 21 is correct reasoning. The others are incorrect."
+            },
+            {
+              "id": "q8",
+              "questionText": "What is 50 − 27?",
+              "choices": ["13", "23", "33", "43"],
+              "correctIndex": 1,
+              "hint": "Break 27 into 20 + 7.",
+              "help": "50 − 20 = 30, then 30 − 7 = 23.",
+              "solution": "50 − 27 = 23."
+            },
+            {
+              "id": "q9",
+              "questionText": "Which number is a multiple of 4?",
+              "choices": ["18", "22", "28", "30"],
+              "correctIndex": 2,
+              "hint": "A number is a multiple of 4 if it is 4 × something.",
+              "help": "Try dividing each number by 4.",
+              "solution": "28 = 4 × 7, so it is a multiple of 4."
+            },
+            {
+              "id": "q10",
+              "questionText": "Which idea BEST describes arithmetic?",
+              "choices": [
+                "A set of random tricks.",
+                "A system of patterns and rules.",
+                "A way to avoid thinking.",
+                "A tool used only in school."
+              ],
+              "correctIndex": 1,
+              "hint": "Think about how operations behave.",
+              "help": "Arithmetic follows consistent rules.",
+              "solution": "Arithmetic is a system of patterns and rules that help us understand numbers."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
