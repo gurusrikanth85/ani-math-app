@@ -12,246 +12,250 @@
   ],
 
   "modules": [
-    {
-      "id": "arithmetic-foundations",
-      "title": "Arithmetic Foundations",
-      "chapters": [
-        {
-          "id": "why-arithmetic-matters",
-          "title": "Why Arithmetic Matters",
-          "introQuote": "Arithmetic is the secret engine behind every math idea, Ani. Let’s open the hood and see how it runs!",
-          "questions": [
-            {
-              "id": "q1",
-              "questionText": "Which of these is the BEST reason why arithmetic is important?",
-              "choices": [
-                "It helps you memorize long numbers.",
-                "It is the foundation for all higher math.",
-                "It makes you faster at typing.",
-                "It is only useful for shopping."
-              ],
-              "correctIndex": 1,
-              "hint": "Think about what subjects depend on arithmetic.",
-              "help": "Algebra, geometry, and even physics rely on arithmetic rules.",
-              "solution": "Arithmetic is the foundation for all higher math. Without understanding operations, patterns, and number behavior, advanced topics become difficult."
-            },
-            {
-              "id": "q2",
-              "questionText": "Which pattern continues correctly? 3, 6, 9, 12, ___",
-              "choices": ["13", "14", "15", "18"],
-              "correctIndex": 2,
-              "hint": "How much does the number increase each time?",
-              "help": "Each term increases by 3.",
-              "solution": "The pattern adds 3 each time. 12 + 3 = 15."
-            },
-            {
-              "id": "q3",
-              "questionText": "Which statement is ALWAYS true?",
-              "choices": [
-                "Adding 1 always makes a number smaller.",
-                "Multiplying by 0 gives 0.",
-                "Subtracting 5 always gives a positive number.",
-                "Dividing makes numbers bigger."
-              ],
-              "correctIndex": 1,
-              "hint": "Think about the special behavior of zero.",
-              "help": "Anything multiplied by 0 becomes 0.",
-              "solution": "Multiplying any number by 0 always gives 0. The other statements are not always true."
-            },
-            {
-              "id": "q4",
-              "questionText": "What is 25 + 17?",
-              "choices": ["32", "38", "42", "44"],
-              "correctIndex": 1,
-              "hint": "Break 17 into 10 + 7.",
-              "help": "25 + 10 = 35, then 35 + 7 = 42? Wait — check carefully.",
-              "solution": "25 + 17 = 25 + (10 + 7) = 35 + 7 = 42? No — that was a trap. Correct calculation: 25 + 10 = 35, 35 + 7 = 42. But 42 is not in the correct position. The correct answer is 42 → choice index 2. (Your choices list must match this.)"
-            },
-            {
-              "id": "q5",
-              "questionText": "Which number is the odd one out? 4, 9, 16, 25, 30",
-              "choices": ["4", "9", "16", "30"],
-              "correctIndex": 3,
-              "hint": "Look for perfect squares.",
-              "help": "4, 9, 16, and 25 are perfect squares.",
-              "solution": "30 is not a perfect square. All others are squares of whole numbers."
-            },
-            {
-              "id": "q6",
-              "questionText": "What is 8 × 3?",
-              "choices": ["11", "18", "21", "24"],
-              "correctIndex": 1,
-              "hint": "Think repeated addition.",
-              "help": "8 × 3 = 8 + 8 + 8.",
-              "solution": "8 + 8 + 8 = 24? No — check choices. Correct multiplication: 8 × 3 = 24 → choice index 3."
-            },
-            {
-              "id": "q7",
-              "questionText": "Which shows correct reasoning?",
-              "choices": [
-                "If 5 + 5 = 10, then 5 + 6 = 10.",
-                "If 7 × 2 = 14, then 7 × 3 = 21.",
-                "If 9 − 3 = 6, then 9 − 4 = 7.",
-                "If 4 × 4 = 16, then 4 × 5 = 15."
-              ],
-              "correctIndex": 1,
-              "hint": "Think about how multiplication grows.",
-              "help": "Multiplying by a larger number gives a larger product.",
-              "solution": "7 × 2 = 14, and 7 × 3 = 21 is correct reasoning. The others are incorrect."
-            },
-            {
-              "id": "q8",
-              "questionText": "What is 50 − 27?",
-              "choices": ["13", "23", "33", "43"],
-              "correctIndex": 1,
-              "hint": "Break 27 into 20 + 7.",
-              "help": "50 − 20 = 30, then 30 − 7 = 23.",
-              "solution": "50 − 27 = 23."
-            },
-            {
-              "id": "q9",
-              "questionText": "Which number is a multiple of 4?",
-              "choices": ["18", "22", "28", "30"],
-              "correctIndex": 2,
-              "hint": "A number is a multiple of 4 if it is 4 × something.",
-              "help": "Try dividing each number by 4.",
-              "solution": "28 = 4 × 7, so it is a multiple of 4."
-            },
-            {
-              "id": "q10",
-              "questionText": "Which idea BEST describes arithmetic?",
-              "choices": [
-                "A set of random tricks.",
-                "A system of patterns and rules.",
-                "A way to avoid thinking.",
-                "A tool used only in school."
-              ],
-              "correctIndex": 1,
-              "hint": "Think about how operations behave.",
-              "help": "Arithmetic follows consistent rules.",
-              "solution": "Arithmetic is a system of patterns and rules that help us understand numbers."
-            },
-            
-               
-          ]
-        }
+    
 
-          ]
+{
+  "id": "arithmetic-foundations",
+  "title": "Arithmetic Foundations",
+  "chapters": [
+    {
+      "id": "why-arithmetic-matters",
+      "title": "Why Arithmetic Matters",
+      "introQuote": "Arithmetic is the secret engine behind every math idea, Ani. Let’s open the hood and see how it runs!",
+      "questions": [
+        {
+          "id": "q1",
+          "questionText": "Which of these is the BEST reason why arithmetic is important?",
+          "choices": [
+            "It helps you memorize long numbers.",
+            "It is the foundation for all higher math.",
+            "It makes you faster at typing.",
+            "It is only useful for shopping."
+          ],
+          "correctIndex": 1,
+          "hint": "Think about what subjects depend on arithmetic.",
+          "help": "Algebra, geometry, and even physics rely on arithmetic rules.",
+          "solution": "Arithmetic is the foundation for all higher math. Without understanding operations, patterns, and number behavior, advanced topics become difficult."
+        },
+        {
+          "id": "q2",
+          "questionText": "Which pattern continues correctly? 3, 6, 9, 12, ___",
+          "choices": ["13", "14", "15", "18"],
+          "correctIndex": 2,
+          "hint": "How much does the number increase each time?",
+          "help": "Each term increases by 3.",
+          "solution": "The pattern adds 3 each time. 12 + 3 = 15."
+        },
+        {
+          "id": "q3",
+          "questionText": "Which statement is ALWAYS true?",
+          "choices": [
+            "Adding 1 always makes a number smaller.",
+            "Multiplying by 0 gives 0.",
+            "Subtracting 5 always gives a positive number.",
+            "Dividing makes numbers bigger."
+          ],
+          "correctIndex": 1,
+          "hint": "Think about the special behavior of zero.",
+          "help": "Anything multiplied by 0 becomes 0.",
+          "solution": "Multiplying any number by 0 always gives 0. The other statements are not always true."
+        },
+        {
+          "id": "q4",
+          "questionText": "What is 25 + 17?",
+          "choices": ["32", "38", "42", "44"],
+          "correctIndex": 3,
+          "hint": "Break 17 into 10 + 7.",
+          "help": "25 + 10 = 35, then 35 + 7 = 42.",
+          "solution": "25 + 17 = 25 + (10 + 7) = 35 + 7 = 42. So the correct answer is 42."
+        },
+        {
+          "id": "q5",
+          "questionText": "Which number is the odd one out? 4, 9, 16, 25, 30",
+          "choices": ["4", "9", "16", "30"],
+          "correctIndex": 3,
+          "hint": "Look for perfect squares.",
+          "help": "4, 9, 16, and 25 are perfect squares.",
+          "solution": "30 is not a perfect square. All others are squares of whole numbers."
+        },
+        {
+          "id": "q6",
+          "questionText": "What is 8 × 3?",
+          "choices": ["11", "18", "21", "24"],
+          "correctIndex": 3,
+          "hint": "Think repeated addition.",
+          "help": "8 × 3 = 8 + 8 + 8.",
+          "solution": "8 + 8 + 8 = 24. So 8 × 3 = 24."
+        },
+        {
+          "id": "q7",
+          "questionText": "Which shows correct reasoning?",
+          "choices": [
+            "If 5 + 5 = 10, then 5 + 6 = 10.",
+            "If 7 × 2 = 14, then 7 × 3 = 21.",
+            "If 9 − 3 = 6, then 9 − 4 = 7.",
+            "If 4 × 4 = 16, then 4 × 5 = 15."
+          ],
+          "correctIndex": 1,
+          "hint": "Think about how multiplication grows.",
+          "help": "Multiplying by a larger number gives a larger product.",
+          "solution": "7 × 2 = 14, and 7 × 3 = 21 is correct reasoning. The others are incorrect."
+        },
+        {
+          "id": "q8",
+          "questionText": "What is 50 − 27?",
+          "choices": ["13", "23", "33", "43"],
+          "correctIndex": 1,
+          "hint": "Break 27 into 20 + 7.",
+          "help": "50 − 20 = 30, then 30 − 7 = 23.",
+          "solution": "50 − 27 = 23."
+        },
+        {
+          "id": "q9",
+          "questionText": "Which number is a multiple of 4?",
+          "choices": ["18", "22", "28", "30"],
+          "correctIndex": 2,
+          "hint": "A number is a multiple of 4 if it is 4 × something.",
+          "help": "Try dividing each number by 4.",
+          "solution": "28 = 4 × 7, so it is a multiple of 4."
+        },
+        {
+          "id": "q10",
+          "questionText": "Which idea BEST describes arithmetic?",
+          "choices": [
+            "A set of random tricks.",
+            "A system of patterns and rules.",
+            "A way to avoid thinking.",
+            "A tool used only in school."
+          ],
+          "correctIndex": 1,
+          "hint": "Think about how operations behave.",
+          "help": "Arithmetic follows consistent rules.",
+          "solution": "Arithmetic is a system of patterns and rules that help us understand numbers."
         }
       ]
     },
+    {
+      "id": "addition",
+      "title": "Addition",
+      "introQuote": "Addition is like stacking blocks, Ani — each number makes the tower taller.",
+      "questions": [
+        {
+          "id": "add-q1",
+          "questionText": "What is 37 + 48?",
+          "choices": ["75", "77", "83", "85"],
+          "correctIndex": 3,
+          "hint": "Add tens and ones separately.",
+          "help": "37 + 48 = (30 + 40) + (7 + 8) = 70 + 15.",
+          "solution": "Add tens: 30 + 40 = 70. Add ones: 7 + 8 = 15. Then 70 + 15 = 85. So the answer is 85."
+        },
+        {
+          "id": "add-q2",
+          "questionText": "A number increases by 17 and becomes 63. What was the original number?",
+          "choices": ["46", "47", "48", "50"],
+          "correctIndex": 0,
+          "hint": "Reverse the operation.",
+          "help": "If x + 17 = 63, then x = 63 − 17.",
+          "solution": "63 − 17 = 46. So the original number is 46."
+        },
+        {
+          "id": "add-q3",
+          "questionText": "Which sum is equal to 3 + 3 + 3 + 3 + 3?",
+          "choices": ["3 × 4", "3 × 5", "5 × 3", "Both B and C"],
+          "correctIndex": 3,
+          "hint": "How many 3s are being added?",
+          "help": "There are five 3s.",
+          "solution": "3 + 3 + 3 + 3 + 3 is five groups of 3, so it equals 3 × 5 and also 5 × 3. Both B and C are correct."
+        },
+        {
+          "id": "add-q4",
+          "questionText": "Ani adds 256 and 399 in his head. Which is the easiest way?",
+          "choices": [
+            "256 + 399 = 256 + 400 − 1",
+            "256 + 399 = 200 + 300",
+            "256 + 399 = 250 + 350",
+            "256 + 399 = 256 − 1"
+          ],
+          "correctIndex": 0,
+          "hint": "Think about making a round number.",
+          "help": "399 is close to 400.",
+          "solution": "256 + 399 = 256 + (400 − 1) = (256 + 400) − 1 = 656 − 1 = 655. This method uses a friendly number."
+        },
+        {
+          "id": "add-q5",
+          "questionText": "What is 1 + 2 + 3 + 4 + 5?",
+          "choices": ["10", "12", "14", "15"],
+          "correctIndex": 3,
+          "hint": "Pair numbers from the ends.",
+          "help": "1 + 5 and 2 + 4 make nice pairs.",
+          "solution": "1 + 5 = 6, 2 + 4 = 6, and then add 3: 6 + 6 + 3 = 15."
+        },
+        {
+          "id": "add-q6",
+          "questionText": "A shop sells 18 pencils in one pack and 27 in another. If Ani buys one of each pack, how many pencils does he have?",
+          "choices": ["35", "40", "45", "50"],
+          "correctIndex": 2,
+          "hint": "Add 18 and 27.",
+          "help": "18 + 27 = (10 + 20) + (8 + 7).",
+          "solution": "18 + 27 = 10 + 20 + 8 + 7 = 30 + 15 = 45. So Ani has 45 pencils."
+        },
+        {
+          "id": "add-q7",
+          "questionText": "Which expression has the same value as 100 + 99?",
+          "choices": [
+            "2 × 100",
+            "200 − 1",
+            "100 − 99",
+            "99 − 100"
+          ],
+          "correctIndex": 1,
+          "hint": "Think of 99 as 100 − 1.",
+          "help": "100 + 99 = 100 + (100 − 1).",
+          "solution": "100 + 99 = 100 + (100 − 1) = 200 − 1 = 199."
+        },
+        {
+          "id": "add-q8",
+          "questionText": "Ani adds three numbers: 24, 37, and 16. What is the total?",
+          "choices": ["67", "77", "87", "97"],
+          "correctIndex": 1,
+          "hint": "Group numbers to make a round number.",
+          "help": "24 + 16 makes a nice pair.",
+          "solution": "24 + 16 = 40. Then 40 + 37 = 77. So the total is 77."
+        },
+        {
+          "id": "add-q9",
+          "questionText": "Which of these is the BEST mental strategy for 499 + 502?",
+          "choices": [
+            "Add 500 + 500 and subtract 1.",
+            "Add 400 + 500.",
+            "Add 499 + 400.",
+            "Subtract 502 from 499."
+          ],
+          "correctIndex": 0,
+          "hint": "Both numbers are close to 500.",
+          "help": "Think of 499 as 500 − 1 and 502 as 500 + 2.",
+          "solution": "499 + 502 = (500 − 1) + (500 + 2) = 500 + 500 + 1 = 1001. The strategy 500 + 500 − 1 is the easiest."
+        },
+        {
+          "id": "add-q10",
+          "questionText": "The sum of two numbers is 120. One of them is 47. What is the other?",
+          "choices": ["63", "67", "73", "83"],
+          "correctIndex": 2,
+          "hint": "Think: 47 + ? = 120.",
+          "help": "Subtract 47 from 120.",
+          "solution": "120 − 47 = 120 − 40 − 7 = 80 − 7 = 73. So the other number is 73."
+        }
+      ]
+    }
+  ]
+}
 
 
+    
 
-     {
-          "id": "addition",
-          "title": "Addition",
-          "introQuote": "Addition is like stacking blocks, Ani — each number makes the tower taller.",
-          "questions": [
-            {
-              "id": "add-q1",
-              "questionText": "What is 37 + 48?",
-              "choices": ["75", "77", "83", "85"],
-              "correctIndex": 2,
-              "hint": "Add tens and ones separately.",
-              "help": "37 + 48 = (30 + 40) + (7 + 8) = 70 + 15.",
-              "solution": "Add tens: 30 + 40 = 70. Add ones: 7 + 8 = 15. Then 70 + 15 = 85. So the answer is 85."
-            },
-            {
-              "id": "add-q2",
-              "questionText": "A number increases by 17 and becomes 63. What was the original number?",
-              "choices": ["46", "47", "48", "50"],
-              "correctIndex": 1,
-              "hint": "Reverse the operation.",
-              "help": "If x + 17 = 63, then x = 63 − 17.",
-              "solution": "63 − 17 = 46? Check carefully: 63 − 10 = 53, 53 − 7 = 46. So the original number is 46."
-            },
-            {
-              "id": "add-q3",
-              "questionText": "Which sum is equal to 3 + 3 + 3 + 3 + 3?",
-              "choices": ["3 × 4", "3 × 5", "5 × 3", "Both B and C"],
-              "correctIndex": 3,
-              "hint": "How many 3s are being added?",
-              "help": "There are five 3s.",
-              "solution": "3 + 3 + 3 + 3 + 3 is five groups of 3, so it equals 3 × 5 and also 5 × 3. Both B and C are correct."
-            },
-            {
-              "id": "add-q4",
-              "questionText": "Ani adds 256 and 399 in his head. Which is the easiest way?",
-              "choices": [
-                "256 + 399 = 256 + 400 − 1",
-                "256 + 399 = 200 + 300",
-                "256 + 399 = 250 + 350",
-                "256 + 399 = 256 − 1"
-              ],
-              "correctIndex": 0,
-              "hint": "Think about making a round number.",
-              "help": "399 is close to 400.",
-              "solution": "256 + 399 = 256 + (400 − 1) = (256 + 400) − 1 = 656 − 1 = 655. This method uses a friendly number."
-            },
-            {
-              "id": "add-q5",
-              "questionText": "What is 1 + 2 + 3 + 4 + 5?",
-              "choices": ["10", "12", "14", "15"],
-              "correctIndex": 3,
-              "hint": "Pair numbers from the ends.",
-              "help": "1 + 5 and 2 + 4 make nice pairs.",
-              "solution": "1 + 5 = 6, 2 + 4 = 6, and then add 3: 6 + 6 + 3 = 15."
-            },
-            {
-              "id": "add-q6",
-              "questionText": "A shop sells 18 pencils in one pack and 27 in another. If Ani buys one of each pack, how many pencils does he have?",
-              "choices": ["35", "40", "45", "50"],
-              "correctIndex": 2,
-              "hint": "Add 18 and 27.",
-              "help": "18 + 27 = (10 + 20) + (8 + 7).",
-              "solution": "18 + 27 = 10 + 20 + 8 + 7 = 30 + 15 = 45. So Ani has 45 pencils."
-            },
-            {
-              "id": "add-q7",
-              "questionText": "Which expression has the same value as 100 + 99?",
-              "choices": [
-                "2 × 100",
-                "200 − 1",
-                "100 − 99",
-                "99 − 100"
-              ],
-              "correctIndex": 1,
-              "hint": "Think of 99 as 100 − 1.",
-              "help": "100 + 99 = 100 + (100 − 1).",
-              "solution": "100 + 99 = 100 + (100 − 1) = 200 − 1 = 199."
-            },
-            {
-              "id": "add-q8",
-              "questionText": "Ani adds three numbers: 24, 37, and 16. What is the total?",
-              "choices": ["67", "77", "87", "97"],
-              "correctIndex": 1,
-              "hint": "Group numbers to make a round number.",
-              "help": "24 + 16 makes a nice pair.",
-              "solution": "24 + 16 = 40. Then 40 + 37 = 77. So the total is 77."
-            },
-            {
-              "id": "add-q9",
-              "questionText": "Which of these is the BEST mental strategy for 499 + 502?",
-              "choices": [
-                "Add 500 + 500 and subtract 1.",
-                "Add 400 + 500.",
-                "Add 499 + 400.",
-                "Subtract 502 from 499."
-              ],
-              "correctIndex": 0,
-              "hint": "Both numbers are close to 500.",
-              "help": "Think of 499 as 500 − 1 and 502 as 500 + 2.",
-              "solution": "499 + 502 = (500 − 1) + (500 + 2) = 500 + 500 + 1 = 1001. The strategy 500 + 500 − 1 is the easiest."
-            },
-            {
-              "id": "add-q10",
-              "questionText": "The sum of two numbers is 120. One of them is 47. What is the other?",
-              "choices": ["63", "67", "73", "83"],
-              "correctIndex": 1,
-              "hint": "Think: 47 + ? = 120.",
-              "help": "Subtract 47 from 120.",
-              "solution": "120 − 47 = 120 − 40 − 7 = 80 − 7 = 73? Check carefully: 120 − 47 = 73, so the correct answer is 73."
-            }
+
+    
+
+     
   ]
 }
