@@ -131,8 +131,19 @@
               "help": "Arithmetic follows consistent rules.",
               "solution": "Arithmetic is a system of patterns and rules that help us understand numbers."
             },
-            }
-                    {
+            
+               
+          ]
+        }
+
+          ]
+        }
+      ]
+    },
+
+
+
+     {
           "id": "addition",
           "title": "Addition",
           "introQuote": "Addition is like stacking blocks, Ani — each number makes the tower taller.",
@@ -242,12 +253,5 @@
               "help": "Subtract 47 from 120.",
               "solution": "120 − 47 = 120 − 40 − 7 = 80 − 7 = 73? Check carefully: 120 − 47 = 73, so the correct answer is 73."
             }
-          ]
-        }
-
-          ]
-        }
-      ]
-    }
   ]
 }
