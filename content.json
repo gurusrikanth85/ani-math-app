@@ -753,7 +753,8 @@
         {
           "id": "div-q9",
           "questionText": "Which is larger: 100 ÷ 4 or 120 ÷ 5?",
-          "choices": ["100 ÷ 4", "120 ÷ 5", "They are equal", "Not enough information"],
+      ,
+          ,"choices": ["100 ÷ 4", "120 ÷ 5", "They are equal", "Not enough information"],
           "correctIndex": 2,
           "hint": "Compute both.",
           "help": "100 ÷ 4 = 25, 120 ÷ 5 = 24.",
@@ -769,15 +770,10 @@
           "solution": "27 × 2 = 54, 54 ÷ 3 = 18."
         }
       ]
-    }
+    },
 
 
-    
-  ],
-
-
-  [
-    {
+        {
  "id":"factors-and-multiples",
  "title":"Factors & Multiples",
  "introQuote":"Ani, factors and multiples are like the secret gears inside numbers — once you see how they turn, everything becomes easier.",
@@ -908,19 +904,14 @@
 
 
 
+
+
+    
+
+    
   ]
 
-
-
-  
 }
 
-
-    
-
-
-    
-
-     
   ]
 }
